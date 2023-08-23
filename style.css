@@ -1,0 +1,60 @@
+html {
+  position: relative;
+}
+.menu {
+  width: 60px;
+  position: fixed;
+  height: 1000px;
+  background: gray;
+  left: 0;
+  top: 0;
+}
+.menu:hover .submenu {
+  opacity: 1;
+  width: 370px;
+  font-size: 25px;
+}
+.menu {
+  transition: 0.5s ease;
+}
+.menu:hover {
+  width: 370px;
+  transition: 0.5s ease-in-out;
+  padding: 20px;
+}
+.menu:hover p {
+  opacity: 0;
+}
+p {
+  width: 100%;
+  font-size: 30px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 45%;
+  color: #fff;
+  margin: 0;
+  transition: 0.5s;
+}
+p {
+  width: 100%;
+  font-size: 30px;
+
+  position: absolute;
+  top: 60%;
+  color: #fff;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: white;
+}
+.submenu a:hover {
+  color: orange;
+  transition: 0.5s;
+}
+.submenu {
+  opacity: 0;
+  list-style: none;
+}
