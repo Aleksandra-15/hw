@@ -4,13 +4,50 @@ html {
 .menu {
   width: 60px;
   position: fixed;
-  height: 1000px;
+  height: 100vh;
+  transition: 0.5s all;
   background: gray;
   left: 0;
   top: 0;
 }
+.submenu{
+display: none;
+list-style: none;
+}
+.submenu a{
+ text-decoration: none;
+ color:#fff;
+ 
+}
+.submenu a::before{
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background:orange;
+  border:1px solid black;
+  margin-right: 10px;
+  transform: rotate(45deg);
+}
+.menu-list{
+display: flex;
+align-items:center;
+flex-direction: column;
+justify-content: start;
+height: 100%;
+width: 100%;
+}
+.menu-text{
+  text-transform: uppercase;
+  font-size: 30px;
+  white-space: nowrap;
+}
+.submenu a{
+text-transform: uppercase;
+font-size: 25px;
+}
 .menu:hover .submenu {
-  opacity: 1;
+display: block;
   width: 370px;
   font-size: 25px;
 }
@@ -35,16 +72,7 @@ p {
   margin: 0;
   transition: 0.5s;
 }
-p {
-  width: 100%;
-  font-size: 30px;
 
-  position: absolute;
-  top: 60%;
-  color: #fff;
-  margin: 0;
-  transition: 0.5s;
-}
 
 .submenu a {
   text-decoration: none;
@@ -55,6 +83,6 @@ p {
   transition: 0.5s;
 }
 .submenu {
-  opacity: 0;
+
   list-style: none;
 }
