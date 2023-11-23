@@ -1,4 +1,15 @@
-html {
+li{
+list-style-type: none;
+}
+a{
+text-decoration: none;
+}
+.logo{
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+/* html {
   position: relative;
 }
 .menu {
@@ -86,3 +97,4 @@ p {
 
   list-style: none;
 }
+ */
